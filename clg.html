@@ -1,23 +1,25 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>23BCE1760 q1(i)</title> 
-</head> 
-<body> 
-    <button onclick="fun()">click me to generate a table</button> 
-    <button onclick="append()">append a row 
-    </button> 
-    <script>              let tab = document.createElement("table");        let count=0;       function append(){         let row = tab.insertRow();         let cell1=row.insertCell(0);         let cell2=row.insertCell(1);         let cell3=row.insertCell(2);         cell1.innerHTML=`cell ${count++}`;         cell2.innerHTML=`cell ${count++}`;         cell3.innerHTML=`cell ${count++}`; 
-               } 
-      function fun(){         let n=parseInt(prompt("Enter no of rows")); 
-                 
-        for(let i=0;i<n;i++) 
-    {                  let row = tab.insertRow();         let cell1=row.insertCell(0);         let cell2=row.insertCell(1);         let cell3=row.insertCell(2);         cell1.innerHTML=`cell ${count++}`;         cell2.innerHTML=`cell ${count++}`; 
-        cell3.innerHTML=`cell ${count++}`; 
-     }     tab.setAttribute("border","1px solid ");     document.body.appendChild(tab); 
-      } 
-    </script> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>23BCE1760 q1</title>
+        <style>
+            div{
+                background-color: #5454f2;
+                height: 100px;
+                width: 400px;
+                padding: 20px;
+                color: white;
+                border: 6px solid green;
+                outline: 20px solid rgb(249, 249, 46);
+                margin: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            My time at VIT has been a wonderful mix of learning and adventure.<br>  
+            I've had the chance to connect with incredible people, take part in thrilling activities, and grow both academically and personally.<br>  
+            VIT has been instrumental in transforming me into a more self-assured and motivated person.
+        </div>
+    </body>
+</html>
